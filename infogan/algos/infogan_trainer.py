@@ -280,4 +280,4 @@ class NonClosingSessionWrapper():
 
   def __exit__(self, type, value, traceback):
     if self.close_session:
-      sess.close()
+      self.sess.close()
